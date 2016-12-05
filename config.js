@@ -28,8 +28,8 @@
             })
             .when("/BuildTeam",{
                 templateUrl:"BuildTeam.html",
-                controller:"BuidTeamController",
-                controllerAs:"model",
+                controller:"BuildTeamController",
+                controllerAs:"model"
 
             })
             .when("/team",{
