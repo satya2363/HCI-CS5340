@@ -50,58 +50,29 @@
 
         <hr>
 
-        <div class="row">
-            <img ng-src="images.jpg" class="col-xs-2 img-circle pull-right img-size"><i></i></img>
-           <i> <p class="pull-right">James</p></i>
-        <p class="col-xs-10 pull-right">
-           Hi Laura, I just wanted to know if I am eligible for the benefits provided by the government.
-        </p>
+        <div ng-repeat="message in model.list">
 
-        </div>
-        <hr>
-        <div class="row">
-            <img ng-src="Kayla_Person-small.jpg" class="col-xs-2 img-circle pull-left img-size" ><i><p>Lauren</p></i></img>
-        <p class="col-xs-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-            dolor, quis ullamcorper ligula sodales.
-        </p>
-        </div>
-        <hr/>
-        <div class="row">
+        <div  class="row">
             <img ng-src="images.jpg" class="col-xs-2 img-circle pull-right img-size" ><i></i></img>
             <i> <p class="pull-right">James</p></i>
-        <p class="col-xs-10 pull-right">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-            dolor, quis ullamcorper ligula sodales.
-        </p>
-
-            </div>
-        <hr>
-
-        <div class="row">
-            <img ng-src="Kayla_Person-small.jpg" class="col-xs-2 img-circle pull-left img-size" ><i><p>Lauren</p></i></img>
-        <p class="col-xs-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-            dolor, quis ullamcorper ligula sodale
-        </p>
-            </div>
-        <hr>
-        <div class="row">
-            <img ng-src="Kayla_Person-small.jpg" class="col-xs-2 img-circle pull-left img-size" ><i><p>Lauren</p></i></img>
-            <p class="col-xs-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                dolor, quis ullamcorper ligula sodales.
+            <p class="col-xs-10 pull-right">
+             {{ message}}
             </p>
+
         </div>
+            <hr>
+            </div>
 
 
     </div>
 
     <div class="panel-footer nav" style="height:50%">
+
         <span class="input-group">
-            <input type="text" class="form-control input-sm" placeholder="Type your message here...">
+
+            <input ng-model="model.message" type="text" class="form-control input-sm" placeholder="Type your message here...">
       <span class="input-group-btn" style="color: #18BC9C">
-        <button class="btn btn-success btn-sm" >send</button>
+        <button type="submit" ng-click="model.send(model.message)" class="btn btn-success btn-sm" >send</button>
       </span>
         </span>
 

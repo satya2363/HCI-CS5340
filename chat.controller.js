@@ -15,9 +15,7 @@
     function ChatController($location) {
         var vm = this;
 
-        vm.navigation=navigation;
-
-
+        vm.send=send;
 
         function init() {
 
@@ -25,10 +23,14 @@
 
         init();
 
+        vm.list=[];
 
-        function navigation()
+        function send(message)
         {
-           console.log("in controller");
+            console.log(message);
+            vm.list.push(message);
+            console.log(vm.list);
+
         }
 
 
