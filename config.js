@@ -44,6 +44,12 @@
                 controllerAs:"model",
 
             })
+            .when("/teamDetail",{
+                templateUrl:"teamDetail.html",
+                controller:"TeamDetailController",
+                controllerAs:"model",
+
+            })
             .when("/",{
 
                 redirectTo:"/home"
