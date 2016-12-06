@@ -10,7 +10,7 @@
         .controller("VideosController",VideosController);
 
 
-    function TeamController() {
+    function VideosController() {
         var vm = this;
 
         function init() {}

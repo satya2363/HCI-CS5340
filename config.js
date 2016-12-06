@@ -50,6 +50,12 @@
                 controllerAs:"model",
 
             })
+            .when("/videos",{
+                templateUrl:"videos.html",
+                controller:"VideosController",
+                controllerAs:"model",
+
+            })
             .when("/",{
 
                 redirectTo:"/home"
