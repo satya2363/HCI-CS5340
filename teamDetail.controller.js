@@ -35,20 +35,20 @@
 
 
 
-        vm.favourite=true;
+        vm.fav=true;
 
         function favourite()
         {
             console.log(false);
 
-        vm.favourite=false;
+        vm.fav=false;
         }
 
         function remove()
         {
             console.log(true);
 
-            vm.favourite=true;
+            vm.fav=true;
         }
 
 

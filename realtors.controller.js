@@ -10,7 +10,7 @@
         .controller("realtorController",realtorController);
     console.log("hi");
 
-    function inspectorController() {
+    function realtorController() {
         var vm = this;
 
 
