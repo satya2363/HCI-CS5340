@@ -50,6 +50,12 @@
                 controllerAs:"model"
 
             })
+            .when("/inspector",{
+                templateUrl:"inspector.html",
+                controller:"inspectorController",
+                controllerAs:"model"
+
+            })
             .when("/videos",{
                 templateUrl:"videos.html",
                 controller:"VideosController",
