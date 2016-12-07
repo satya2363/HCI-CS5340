@@ -15,6 +15,7 @@
 
 
         vm.send=send;
+        vm.remove=remove;
 
         function init() {
 
@@ -22,16 +23,20 @@
 
         init();
 
-        vm.list=[];
+        vm.favourite=true;
 
-        function send(message)
+        function send()
         {
-            console.log(message);
-            vm.list.push(message);
-            console.log(vm.list);
-            vm.message = true;
-            console.log(vm.message);
+            console.log(false);
 
+        vm.favourite=false;
+        }
+
+        function remove()
+        {
+            console.log(true);
+
+            vm.favourite=true;
         }
 
 

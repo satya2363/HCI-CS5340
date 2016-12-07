@@ -1,4 +1,7 @@
 <body>
+<link href="css/teamDetail.css" rel="stylesheet">
+
+
 <!-- Navigation -->
 <nav id="page-chat" class="navbar navbar-default navbar-fixed-top navbar-sm navbar-custom">
     <div class="container">
@@ -50,7 +53,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
 
 
-            <div class="panel panel-info">
+            <div class="panel panel-info"  >
                 <div class="panel-heading">
                     <center><h2 class="panel-title">Scott Stevens</h2></center>
                 </div>
@@ -95,8 +98,9 @@
                                 </tbody>
                             </table>
                             <center>
-                            <a style="margin: 5px" class="btn btn-info btn-block btn-outline-back text-uppercase" data-toggle="modal" data-target="#bannerformmodal" id="reply"><span class="glyphicon glyphicon-envelope"></span> Message</a>
-                            <a style="margin: 5px" class="btn btn-warning btn-block btn-outline-back text-uppercase" data-toggle="modal" id="favorite"><span class="glyphicon glyphicon-star"></span> Favorite</a>
+                            <a style="margin: 5px" class="btn btn-success btn-block  text-uppercase" data-toggle="modal" data-target="#bannerformmodal" id="reply"><span class="glyphicon glyphicon-envelope"></span> Message</a>
+                            <a ng-show="model.favourite" ng-click="model.send()" style="margin: 5px" class="btn btn-primary btn-block  text-uppercase"  id="favorite"><span class="glyphicon glyphicon-star"></span> Favorite</a>
+                                <a ng-show="!model.favourite" ng-click="model.remove()" style="margin: 5px; color: red" class="btn btn-primary btn-block  text-uppercase"  id="favorite"><span class="glyphicon glyphicon-remove"></span>Remove Favorite</a>
                             </center>
                                 <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true"
                                  id="bannerformmodal">
@@ -151,10 +155,7 @@
                 <h3 class="reviews">Leave your comment</h3>
             </div>
             <div class="comment-tabs">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="active"><a data-target="#comments-logout" role="tab" data-toggle="tab"><h4 class="reviews text-capitalize">Comments</h4></a></li>
-                    <li class=""><a data-target="#add-comment" role="tab" data-toggle="tab" ><h4 class="reviews text-capitalize">Add comment</h4></a></li>
-                </ul>
+
                 <div class="tab-content">
                     <div class="tab-pane active" id="comments-logout">
                         <ul class="media-list">
@@ -325,7 +326,7 @@
 
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-10">
-                                    <button ng-click="model.send(model.comment)"  class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment"><span class="glyphicon glyphicon-send"></span> Summit comment</button>
+                                    <button ng-click="model.send(model.comment)"  class="btn btn-primary  text-uppercase" type="submit" id="submitComment"><span class="glyphicon glyphicon-send"></span> Submit comment</button>
                                 </div>
                             </div>
                         </form>
