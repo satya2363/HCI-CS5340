@@ -7,10 +7,10 @@
 (function(){
     angular
         .module("BHC")
-        .controller("inspectorController",inspectorController);
+        .controller("allinspectorsController",allinspectorsController);
     console.log("hi");
 
-    function inspectorController() {
+    function allinspectorsController() {
         var vm = this;
 
 

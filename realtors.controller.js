@@ -7,7 +7,7 @@
 (function(){
     angular
         .module("BHC")
-        .controller("inspectorController",inspectorController);
+        .controller("realtorController",realtorController);
     console.log("hi");
 
     function inspectorController() {

@@ -38,6 +38,18 @@
                 controllerAs:"model"
 
             })
+            .when("/allrealtors",{
+                templateUrl:"allrealtors.html",
+                controller:"allrealtorsController",
+                controllerAs:"model"
+
+            })
+            .when("/allinspectors",{
+                templateUrl:"allinspectors.html",
+                controller:"allinspectorsController",
+                controllerAs:"model"
+
+            })
             .when("/login",{
                 templateUrl:"login.html",
                 controller:"LoginController",
@@ -53,6 +65,12 @@
             .when("/inspector",{
                 templateUrl:"inspector.html",
                 controller:"inspectorController",
+                controllerAs:"model"
+
+            })
+            .when("/realtors",{
+                templateUrl:"realtors.html",
+                controller:"realtorController",
                 controllerAs:"model"
 
             })
