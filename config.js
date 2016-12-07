@@ -130,7 +130,7 @@
             })
             .when("/",{
 
-                redirectTo:"/home"
+                redirectTo:"/login"
             })
             .otherwise({
                 redirectTo:"/home"
