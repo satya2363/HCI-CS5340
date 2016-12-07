@@ -11,19 +11,19 @@
             .when("/home",{
                 templateUrl:"home.html",
                 controller:"HomeController",
-                controllerAs:"model",
+                controllerAs:"model"
 
             })
             .when("/road",{
                 templateUrl:"road.html",
                 controller:"RoadController",
-                controllerAs:"model",
+                controllerAs:"model"
 
             })
             .when("/chat",{
                 templateUrl:"chat.html",
                 controller:"ChatController",
-                controllerAs:"model",
+                controllerAs:"model"
 
             })
             .when("/BuildTeam",{
@@ -35,19 +35,19 @@
             .when("/team",{
                 templateUrl:"team.html",
                 controller:"TeamController",
-                controllerAs:"model",
+                controllerAs:"model"
 
             })
             .when("/login",{
                 templateUrl:"login.html",
                 controller:"LoginController",
-                controllerAs:"model",
+                controllerAs:"model"
 
             })
             .when("/teamDetail",{
                 templateUrl:"teamDetail.html",
                 controller:"TeamDetailController",
-                controllerAs:"model",
+                controllerAs:"model"
 
             })
             .when("/videos",{
@@ -59,12 +59,42 @@
             .when("/chatroom",{
                 templateUrl:"chatroom.html",
                 controller:"ChatRoomController",
-                controllerAs:"model",
+                controllerAs:"model"
 
             })
             .when("/chatoptions",{
                 templateUrl:"chatoptions.html",
                 controller:"ChatOptionsController",
+                controllerAs:"model"
+
+            })
+            .when("/profile",{
+                templateUrl:"profile.html",
+                controller:"ProfileController",
+                controllerAs:"model"
+
+            })
+            .when("/favourite",{
+                templateUrl:"favourite.html",
+                controller:"FavouriteController",
+                controllerAs:"model"
+
+            })
+            .when("/profiledata",{
+                templateUrl:"profiledata.html",
+                controller:"ProfileController",
+                controllerAs:"model"
+
+            })
+            .when("/lenderform",{
+                templateUrl:"lenderform.html",
+                controller:"lenderformController",
+                controllerAs:"model",
+
+            })
+            .when("/mortgage",{
+                templateUrl:"mortgage.html",
+                controller:"MortgageController",
                 controllerAs:"model",
 
             })
