@@ -56,6 +56,12 @@
                 controllerAs:"model"
 
             })
+            .when("/about",{
+                templateUrl:"about.html",
+                controller:"aboutController",
+                controllerAs:"model"
+
+            })
             .when("/teamDetail",{
                 templateUrl:"teamDetail.html",
                 controller:"TeamDetailController",
