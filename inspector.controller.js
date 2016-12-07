@@ -14,8 +14,10 @@
         var vm = this;
 
 
-        vm.send=send;
+        vm.favourite=favourite;
         vm.remove=remove;
+        vm.send=send;
+        vm.list=[];
 
         function init() {
 
@@ -23,9 +25,19 @@
 
         init();
 
+        function send(message)
+        {
+            console.log(message);
+            vm.list.push(message);
+            console.log(vm.list);
+
+        }
+
+
+
         vm.favourite=true;
 
-        function send()
+        function favourite()
         {
             console.log(false);
 
@@ -38,7 +50,6 @@
 
             vm.favourite=true;
         }
-
 
 
     }

@@ -7,10 +7,10 @@
 (function(){
     angular
         .module("BHC")
-        .controller("TeamDetailController",TeamController);
+        .controller("TeamDetailController",TeamDetailController);
     console.log("hi");
 
-    function TeamController() {
+    function TeamDetailController() {
         var vm = this;
 
 
