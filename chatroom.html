@@ -33,40 +33,60 @@
 
 
 
-<div>
-    <h3 class="container">Lauren is now available</h3>
-<div class="panel panel-default panel-height">
+<div  >
+    <h3 class="container">14 people online</h3>
+    <div class="panel panel-default panel-height">
 
-    <div class="panel-body panel-body-scroll" >
+        <div class="panel-body panel-body-scroll" >
 
 
-        <div class="row" >
+            <div class="row" >
 
-        <img ng-src="Kayla_Person-small.jpg" class="col-xs-2 img-circle pull-left img-size" ><i><p>Lauren</p></i></img>
-            <p class="col-xs-10" >
-           Hello James, how can I help you
-        </p>
+                <img ng-src="alex.jpg" class="col-xs-2 img-circle pull-left img-size" ><i><p>Alex</p></i></img>
+                <p class="col-xs-10" >
+                    Hello James, how can I help you
+                </p>
             </div>
 
-        <hr>
+            <hr>
 
-        <div ng-repeat="message in model.list">
+            <div class="row" >
 
-        <div  class="row">
-            <img ng-src="images.jpg" class="col-xs-2 img-circle pull-right img-size" ><i></i></img>
-            <i> <p class="pull-right">James</p></i>
-            <p class="col-xs-10 pull-right">
-             {{ message}}
-            </p>
+                <img ng-src="baby.jpg" class="col-xs-2 img-circle pull-left img-size" ><i><p>Baby</p></i></img>
+                <p class="col-xs-10" >
+                    Hello James, how can I help you
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="row" >
+
+                <img ng-src="serious-guy.jpg" class="col-xs-2 img-circle pull-left img-size" ><i><p>Serious Guy</p></i></img>
+                <p class="col-xs-10" >
+                    Hello James, how can I help you
+                </p>
+            </div>
+
+            <hr>
+
+            <div ng-repeat="message in model.list">
+
+                <div  class="row">
+                    <img ng-src="images.jpg" class="col-xs-2 img-circle pull-right img-size" ><i></i></img>
+                    <i> <p class="pull-right">James</p></i>
+                    <p class="col-xs-10 pull-right">
+                        {{ message}}
+                    </p>
+
+                </div>
+                <hr>
+            </div>
+
 
         </div>
-            <hr>
-            </div>
 
-
-    </div>
-
-    <div class="panel-footer nav" style="height:50%">
+        <div class="panel-footer nav" style="height:50%">
 
         <span class="input-group">
 
@@ -76,7 +96,7 @@
       </span>
         </span>
 
-    </div>
+        </div>
 
     </div>
 </div>

@@ -53,6 +53,18 @@
             .when("/videos",{
                 templateUrl:"videos.html",
                 controller:"VideosController",
+                controllerAs:"model"
+
+            })
+            .when("/chatroom",{
+                templateUrl:"chatroom.html",
+                controller:"ChatRoomController",
+                controllerAs:"model",
+
+            })
+            .when("/chatoptions",{
+                templateUrl:"chatoptions.html",
+                controller:"ChatOptionsController",
                 controllerAs:"model",
 
             })

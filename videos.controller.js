@@ -11,12 +11,22 @@
 
 
     function VideosController() {
+
         var vm = this;
 
-        function init() {}
 
-        init();
 
+
+        vm.send = send;
+        vm.list=[];
+
+        function send(message) {
+            console.log(message);
+            vm.list.push(message);
+            console.log(vm.list);
+
+
+        }
     }
 
 })();

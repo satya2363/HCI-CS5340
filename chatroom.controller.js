@@ -1,18 +1,22 @@
 /**
+ * Created by subbaraju on 6/12/2016.
+ */
+/**
  * Created by subbaraju on 1/12/2016.
  */
-
+/**
+ * Created by subbaraju on 30/11/2016.
+ */
 
 
 (function(){
     angular
         .module("BHC")
-        .controller("TeamDetailController",TeamController);
-    console.log("hi");
+        .controller("ChatRoomController",ChatRoomController);
 
-    function TeamController() {
+
+    function ChatRoomController($location) {
         var vm = this;
-
 
         vm.send=send;
 
@@ -29,10 +33,9 @@
             console.log(message);
             vm.list.push(message);
             console.log(vm.list);
-            vm.message = true;
-            console.log(vm.message);
 
         }
+
 
 
 
